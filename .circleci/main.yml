@@ -15,7 +15,7 @@ jobs:
             command: echo 'You get the picture'
 
 workflows:
-  version: 2:
+ version: 2
    whence-pr:
     when: << pipeline.parameters.is_pr >>
     jobs:
