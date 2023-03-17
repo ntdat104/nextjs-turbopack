@@ -19,5 +19,13 @@ pipeline {
                 sh 'npm run build'
             }
         }
-    }   
+    } 
+    post {
+        success {
+            echo "SUCCESSFUL"
+        }
+        failure {
+            echo "FAILED"
+        }
+    }
 }
