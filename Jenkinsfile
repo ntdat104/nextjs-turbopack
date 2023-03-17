@@ -1,6 +1,11 @@
 pipeline {
+
     agent any
-    tools {nodejs "nodejs"}
+
+    tools {
+        nodejs "nodejs"
+    }
+
     stages {
         stage("install") {
             steps {
@@ -13,6 +18,7 @@ pipeline {
             }
         }
     } 
+    
     post {
         success {
             echo "SUCCESSFUL"
